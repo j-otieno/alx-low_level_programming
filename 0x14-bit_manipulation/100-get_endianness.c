@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * get_edianness - checks if machine has little or big edian
+ * get_endianness - checks if machine has little or big endian
  * Return: 0 for big edian, 1 for little
  */
-int get_edianness(void)
+int get_endianness(void)
 {
 	unsigned int i = 1;
 	char *c = (char *) &i;
