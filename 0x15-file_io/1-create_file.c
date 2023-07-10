@@ -1,4 +1,5 @@
 #include "main.h"
+#include <fcntl.h>
 
 /**
  * create_file - Creates a file.
