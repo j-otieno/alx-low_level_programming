@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <fcntl.h>
 
 char *create_buffer(char *file);
 void close_file(int fd);
@@ -15,7 +16,7 @@ char *create_buffer(char *file)
 {
 	char *buffer;
 
-	buffer = malloc(seizeof(char) * 1024);
+	buffer = malloc(sizeof(char) * 1024);
 
 	if (buffer == NULL)
 	{
